@@ -1,0 +1,37 @@
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px); 
+    background-color:rgb(207, 48, 48);
+    min-height: 200px;
+}
+
+.fa{
+    @include zero-margin(0px, 10px);
+    padding: 5px;
+}
+
+.mat-button.mat-small {
+    min-width: 90%;
+    min-height: 90%;
+}
+
+mat-grid-tile > button > .mat-button[_ngcontent-c1] {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.mat-drawer{
+  min-width: 100%;
+  background-color: darkgrey;
+}
+.mat-button{
+    min-width: 70px;
+}
